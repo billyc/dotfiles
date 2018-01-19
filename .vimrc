@@ -8,6 +8,8 @@ execute pathogen#infect()
 filetype plugin indent on
 
 syntax on
+set background=light
+colorscheme koehler
 
 set modelines=0
 
@@ -27,7 +29,7 @@ set wildmode=list:longest
 set visualbell
 
 set cursorline
-hi CursorLine cterm=NONE ctermbg=234
+hi CursorLine cterm=NONE ctermbg=253
 
 set ttyfast
 set ruler
@@ -71,5 +73,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" colorscheme molokai
+
 
