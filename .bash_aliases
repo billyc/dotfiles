@@ -6,7 +6,6 @@ alias  s='/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe'
 
 alias nv='nvim-qt.exe'
 
-alias git='git.exe'
 alias gitk='gitk.exe'
 alias ggui='git-gui.exe'
 
