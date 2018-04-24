@@ -7,10 +7,21 @@ set nocompatible
 execute pathogen#infect()
 filetype plugin indent on
 
+set t_Co=256
 syntax on
-set background=light
-colorscheme koehler
+set background=dark
+set mouse=a
 
+colorscheme distinguished
+
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+highlight Comment ctermbg=NONE
+
+set cursorline
+hi CursorLine cterm=NONE ctermbg=236
+
+set ttyfast
 set modelines=0
 
 set tabstop=4
@@ -28,10 +39,6 @@ set wildmenu
 set wildmode=list:longest
 set visualbell
 
-set cursorline
-hi CursorLine cterm=NONE ctermbg=253
-
-set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2

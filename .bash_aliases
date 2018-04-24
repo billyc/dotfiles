@@ -5,6 +5,10 @@ alias  n='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe -multiInst'
 alias  s='/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe'
 
 alias nv='nvim-qt.exe'
-alias gitk='cmd.exe /C "C:\\Program Files (x86)\\Git\\cmd\\git" "status" > /dev/null && cmd.exe /c "C:\\Program Files (x86)\\Git\\cmd\\gitk.exe" "--all"'
 
-alias ggui='/c/Program\ Files\ \(x86\)/Git/cmd/git-gui.exe'
+alias git='git.exe'
+alias gitk='gitk.exe'
+alias ggui='git-gui.exe'
+
+alias start='cmd.exe \/C "start $1"'
+
