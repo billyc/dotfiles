@@ -116,14 +116,22 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
+# --------------------------------------------
 # show git branch so we don't make stupid mistakes AGAIN
 parse_git_branch() {
- git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ -\1-/'
 }
-PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;35m\]$(parse_git_branch)\[\033[00m\]\$ '
+PS1='\n\[\033[01;34m\]\w\[\033[01;35m\]$(parse_git_branch)\[\033[01;34m\] » \[\033[00m\]'
 
-# ----------------
+# --------------------------------------------
+# pyenv
+export PATH="/home/billy/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# --------------------------------------------
+# Set DISPLAY for WSL2
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 
 cd ~
 
