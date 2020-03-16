@@ -11,7 +11,9 @@ alias start='cmd.exe \/C "start $1"'
 
 alias jnb='jupyter notebook --no-browser'
 
-alias python='python3'
-alias ipython='ipython3'
-alias pip='pip3'
+#alias python='python3'
+#alias ipython='ipython3'
+#alias pip='pip3'
+
+alias cat='lolcat'
 
