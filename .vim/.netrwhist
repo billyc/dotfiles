@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/billy/public-svn/matsim/scenarios/countries/de/episim/battery/v9/masks'
-let g:netrw_dirhist_2='/home/billy/public-svn/matsim/scenarios/countries/de/episim/battery/v9/masks/berlin'
-let g:netrw_dirhist_3='/home/billy/public-svn/matsim/scenarios/countries/de/episim/battery/v9/masks'
-let g:netrw_dirhist_4='/home/billy/public-svn/matsim/scenarios/countries/de/episim/battery/v9/masks/berlin'
